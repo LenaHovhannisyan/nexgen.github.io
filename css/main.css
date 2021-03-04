@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #606d75;
+}
+
+.top {
+  height: 50px;
+  padding: 0;
+  background-color: #21333e;
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #c0c3d0;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: #00a6a6;
+}
+
+.icons .social .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  transition: all 0.4s ease-out 0s;
+}
+
+section {
+  width: 100%;
+  padding: 130px 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
+
+section.featured:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: calc(100% - 30px);
+  left: calc(50% - 70px);
+  width: 150px;
+  height: 60px;
+  background-image: url(../img/buu.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.25;
+}
+
+h2 {
+  margin: 1.5rem 0;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "Poppins", sans-serif;
+  color: #21333e;
+}
+
+h2 .featured {
+  position: relative;
+  display: inline-block;
+  padding: 5px 15px;
+  color: #058283;
+}
+
+h2 .featured:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background-color: #058283;
+  opacity: 0.15;
+}
+
+h4 {
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #21333e;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+p {
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.primary-button, .primary-button:visited, .primary-button:active {
+  position: relative;
+  z-index: 2;
+  padding: 10px 25px;
+  background-color: #058283;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: #058283;
+  color: #f9f9f9;
+  font-weight: 500;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+
+.pre-title {
+  width: fit-content;
+  margin: auto;
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #00a6a6;
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 45px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fff;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+
+#services {
+  background: #eef4ed;
+}
+#services .items .item {
+  margin-bottom: 30px;
+}
+#services .card p {
+  margin: 0 0 10px;
+  white-space: pre-wrap;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+  font-size: 1rem;
+}
+
+#about {
+  background: #111117;
+  position: relative;
+}
+#about .image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+#about h2 {
+  color: #ffffff;
+}
+#about h2 .featured {
+  color: #ffffff;
+}
+#about h4 {
+  color: #f9f9f9;
+}
+#about .fit-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#about .outline-button, #about .odd .outline-button:visited, #about .odd .outline-button:active {
+  position: relative;
+  z-index: 2;
+  padding: 10px 25px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: var(--primary-color);
+  color: var(--primary-b-color);
+  font-weight: 500;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+
+footer {
+  position: relative;
+  background-color: #111117;
+  color: #c0c3d0;
+}
+footer .card:not(.no-hover) {
+  background-color: rgba(255, 255, 255, 0.035);
+}
+footer .card:not(.no-hover) h4 {
+  color: #f9f9f9;
+}
+footer .card:not(.no-hover) i {
+  margin-right: 10px;
+}
+footer .card:not(.no-hover) a:not(.btn) {
+  margin: 0 0 0.5rem;
+  display: block;
+  color: var(--primary-p-color);
+}
+
+.copyright {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: #c0c3d0;
+}
+
+/*# sourceMappingURL=main.css.map */
