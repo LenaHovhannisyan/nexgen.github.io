@@ -1,4 +1,5 @@
 @import './config';
+@import './responsive';
 
 body {
     margin: 0;
@@ -212,6 +213,26 @@ p {
         -o-transition: all .4s ease-out 0s;
         -moz-transition: all .4s ease-out 0s;
         transition: all .4s ease-out 0s;
+    }
+}
+
+.results {
+    background-image: url(./../img/result-section-bg.jpeg);
+
+    h2, h2 .featured {
+        color: $white-color;
+    }
+
+    .item {
+
+        h4 {
+            color: $secondary-t-color;
+        }
+
+        .radial span {
+            font-size: 2.5rem;
+            color: $secondary-color;
+        }
     }
 }
 

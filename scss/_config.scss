@@ -22,3 +22,10 @@ $primary-p-color: #606d75;
 $h2-font: 'Poppins', sans-serif;
 $h2-weight: 700;
 $h2-size: 3rem;
+
+
+@mixin media-md {
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}

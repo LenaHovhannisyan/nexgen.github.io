@@ -1,0 +1,10 @@
+@include media-md {
+   .top {
+       display: none;
+   }
+
+   .row.items {
+       margin-left: unset;
+       margin-right: unset;
+   }
+}
