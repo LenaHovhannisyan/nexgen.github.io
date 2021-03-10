@@ -146,7 +146,7 @@ p {
 #services {
   background: #eef4ed;
 }
-#services .items .item {
+#services .service-items .item {
   margin-bottom: 30px;
 }
 #services .card p {
@@ -231,7 +231,7 @@ footer .card:not(.no-hover) i {
 footer .card:not(.no-hover) a:not(.btn) {
   margin: 0 0 0.5rem;
   display: block;
-  color: var(--primary-p-color);
+  color: #606d75;
 }
 
 .copyright {

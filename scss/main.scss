@@ -4,13 +4,13 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    color: $primary-p-color;
+    color: map-get($merged, primary-p-color);
 }
 
 .top {
     height: 50px;
     padding: 0;
-    background-color: $nav-top-bg-color;
+    background-color: map-get($merged, nav-top-bg-color);
 }
 
 .navbar-nav {
@@ -18,10 +18,10 @@ body {
         .nav-link {
             font-size: 0.85rem;
             font-weight: 400;
-            color: $secondary-p-color;
+            color:  map-get($merged, secondary-p-color);
 
             &:hover {
-                color: $secondary-color;
+                color:  map-get($merged, secondary-color);
             }
         }
     }
@@ -67,14 +67,14 @@ h2 {
     font-weight: $h2-weight;
     line-height: 1.2;
     font-family: $h2-font;
-    color: $primary-title-color;
+    color:  map-get($merged, primary-title-color);
 }
 
 h2 .featured {
     position: relative;
     display: inline-block;
     padding: 5px 15px;
-    color: $primary-color;
+    color:  map-get($merged, primary-color);
 }
 
 h2 .featured:before {
@@ -85,7 +85,7 @@ h2 .featured:before {
     width: 100%;
     height: 100%;
     border-radius: 4px;
-    background-color: $primary-color;
+    background-color:  map-get($merged, primary-color);
     opacity: 0.15;
 }
 
@@ -94,7 +94,7 @@ h4 {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.2;
-    color: $primary-title-color;
+    color:  map-get($merged, primary-title-color);
     -ms-word-wrap: break-word;
     word-wrap: break-word;
 }
@@ -110,11 +110,11 @@ p {
     position: relative;
     z-index: 2;
     padding: 10px 25px;
-    background-color: $primary-color;
+    background-color:  map-get($merged, primary-color);
     border-radius: 4px;
     border: 1px solid;
-    border-color: $primary-color;
-    color: $primary-b-color;
+    border-color:  map-get($merged, primary-color);
+    color:  map-get($merged, primary-b-color);
     font-weight: 500;
     -webkit-transition: all .4s ease-out 0s;
     -o-transition: all .4s ease-out 0s;
@@ -129,7 +129,7 @@ p {
     font-size: 0.85rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: $secondary-color;
+    color:  map-get($merged, secondary-color);
 }
 
 .card {
@@ -147,9 +147,9 @@ p {
 }
 
 #services {
-    background: $service-section-bg;
+    background:  map-get($merged, service-section-bg);
 
-    .items .item {
+    .service-items .item {
         margin-bottom: 30px;
     }
 
@@ -170,7 +170,7 @@ p {
 }
 
 #about {
-    background: $about-section-bg;
+    background:  map-get($merged, about-section-bg);
     position: relative;
 
     .image {
@@ -181,15 +181,15 @@ p {
     }
 
     h2 {
-        color: $white-color;
+        color:  map-get($merged, white-color);
     }
 
     h2 .featured {
-        color: $white-color;
+        color:  map-get($merged, white-color);
     }
 
     h4 {
-        color: $secondary-t-color;
+        color:  map-get($merged, secondary-t-color);
     } 
 
     .fit-image {
@@ -220,32 +220,32 @@ p {
     background-image: url(./../img/result-section-bg.jpeg);
 
     h2, h2 .featured {
-        color: $white-color;
+        color:  map-get($merged, white-color);
     }
 
     .item {
 
         h4 {
-            color: $secondary-t-color;
+            color:  map-get($merged, secondary-t-color);
         }
 
         .radial span {
             font-size: 2.5rem;
-            color: $secondary-color;
+            color:  map-get($merged, secondary-color);
         }
     }
 }
 
 footer {
     position: relative;
-    background-color: $footer-bg-color;
-    color: $secondary-p-color;
+    background-color:  map-get($merged, footer-bg-color);
+    color:  map-get($merged, secondary-p-color);
 
     .card:not(.no-hover) {
         background-color: rgba(255, 255, 255, 0.035);
 
         h4 {
-            color: $secondary-t-color;
+            color:  map-get($merged, secondary-t-color);
         }
 
         i {
@@ -255,7 +255,7 @@ footer {
         a:not(.btn) {
             margin: 0 0 0.5rem;
             display: block;
-            color: var(--primary-p-color);
+            color: map-get($merged, primary-p-color);
         }
     }
     
@@ -263,6 +263,6 @@ footer {
 }
 
 .copyright {
-    background-color: $copyright-bg-color;
-    color: $secondary-p-color;
+    background-color: map-get($merged, copyright-bg-color);
+    color:  map-get($merged, secondary-p-color);
 }
